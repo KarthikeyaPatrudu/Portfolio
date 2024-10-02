@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="./pics/work.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="./output.css">
+    <title>Karthikeya Patrudu | Web Designer</title>
+</head>
+<body>
+    <header class="bg-[#0a0a0a] w-full sticky top-0 z-10 animate-fadeIn  transition duration-500">
+           <nav class=" container p-4 flex justify-between items-center">
+            <!-- logo div -->
+            <div class="text-xl font-bold">
+                <a href="mailto:lakekarthik1@gmail.com" target="_blank" class="text-white flex">
+                    <svg xmlns="https://www.svgrepo.com/show/483882/person-line-drawing.svg" class="w-8 h-8 text-white mr-1" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14c-4.418 0-8 3.582-8 8s3.582 8 8 8 8-3.582 8-8-3.582-8-8-8zM12 2c-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4-1.79-4-4-4z"/>
+                    </svg>
+                    KarthikeyaPatrudu@
+                </a>
+            </div>
+
+            <!-- nagvigation menu -->
+             <div class="hidden md:flex">
+                <ul class="flex text-gray-400 space-x-6">
+                <li><a href="#home" class="hover:text-white hover:underline ">Home</a></li>
+                <li><a href="#about" class="hover:text-white hover:underline">About</a></li>
+                <li class="relative group">
+                    <a href="#skill" class="hover:text-white hover:underline">Skill</a>
+                     <ul class=" absolute hidden text-gray-400 bg-gray-900 space-y-2 p-2 rounded shadow-lg group-hover:block">
+                        <li><a href="#technical skill" class="hover:text-white hover:underline">Technical </a></li>
+                        <li><a href="#professional skill" class="hover:text-white hover:underline">Professional </a></li>
+                     </ul>
+                </li>
+                <li><a href="#service" class="hover:text-white hover:underline">Service</a></li>
+                <li><a href="#project" class="hover:text-white hover:underline ">Project</a></li>
+                <li><a href="#contact" class="hover:text-white hover:underline">Contact</a></li>
+            </ul>
+             </div>
+
+             <!-- bars -->
+              <div class="md:hidden flex items-center ">
+                <button id="menu-toggle" class="text-white text-3xl focus:outline-none">
+                    <i class="fas fa-bars"></i>
+                </button>
+              </div>
+             </nav>
+
+             <!-- mobile-menu -->
+              <div id="mobile-menu" class="hidden     flex-col items-center bg-black space-y-4 py-4 transition-all duration-300 ease-in-out">
+                <a href="#home" class="text-gray-400 hover:text-white hover:underline">Home</a>
+                <a href="#about" class="text-gray-400 hover:text-white hover:underline">About</a>
+                <a href="#skill" class="text-gray-400 hover:text-white hover:underline">Skill</a>
+                <a href="#service" class="text-gray-400 hover:text-white hover:underline">Service</a>
+                <a href="#project" class="text-gray-400 hover:text-white hover:underline">Project</a>
+                <a href="#contact" class="text-gray-400 hover:text-white hover:underline">Contact</a>
+
+              </div>
+    </header>
+    <!-- JS for mobile menu toggle -->
+     <script>
+        const menuToggle = document.getElementById('menu-toggle');
+        const mobileMenu= document.getElementById('mobile-menu');
+
+        menuToggle.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+            mobileMenu.classList.toggle('flex');
+        })
+     </script>
+
+     <!-- home section -->
+      <section id="home" class="min-h-screen bg-gray-900 flex flex-col justify-center text-white text-center space-y-6 p-6">
+          <h1 class="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold animate-fadeIn mb-4 transition duration-500 hover:text-blue-500 hover:scale-105">
+            Karthikeya Patrudu
+          </h1>
+          <p class="text-lg sm:text-xl md:text-2xl lg:text-3xl animate-fadeIn delay-100 transition duration-500 hover:text-blue-500 hover:scale-105">
+            Web Developer | India
+          </p>
+
+          <!-- profile image -->
+           <div class="relative">
+            <img src="./pics/profile.jpeg" alt="Karthikeya Profile pic" class="w-36 h36 sm:w-44 sm:h-44 md:w-48 md:h-48 lg:w-60 lg:h-60 rounded-full object-cover mx-auto shadow-md transition-transform duration-500 transform hover:scale-110 hover:rotate-3">
+           </div>
+
+           <!-- social Icons -->
+            <div class="space-x-4 sm:space-x-6 animate-fadeIn delay-200">
+                <a href="https://twitter.com" target="_blank" class="text-lg sm:text-xl lg:text-2xl hover:text-gray-400 transition-colors">
+                    <i class="fa-brands fa-x-twitter"></i>
+                </a>
+                <a href="https://linkedin.com" target="_blank" class="text-lg sm:text-xl lg:text-2xl hover:text-gray-400  transition-colors ">
+                    <i class="fa-brands fa-linkedin"></i>
+                </a>
+                <a href="https://github.com" target="_blank" class="text-lg sm:text-xl lg:text-2xl hover:text-gray-400  transition-colors ">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+                <a href="https://facebook.com" target="_blank" class="text-lg sm:text-xl lg:text-2xl hover:text-gray-400  transition-colors ">
+                    <i class="fa-brands fa-facebook"></i>
+                </a>
+            </div>
+ 
+            <!-- resume button -->
+             <div class="animate-fadeIn delay-300">
+                <a href="./resume.pdf" download target="_blank" class="inline-block bg-blue-600 text-white py-2 px-4 sm:px-6 sm:py-3 lg:py-4 lg:px-8 rounded-full text-base sm:text-lg lg:text-xl font-semibold hover:bg-blue-700 hover:shadow-lg transition-colors">
+                    Download Resume
+                </a>
+             </div>
+                 
+             <!-- scroll icon -->
+             <div class="animate-bounce mt-6 sm:mt-8">
+                <a href="#about" class="text-white text-2xl sm:text-3xl lg:text-4xl">
+                    <i class="fa-solid fa-caret-down"></i>
+                </a>
+             </div>
+      </section>
+
+      <!-- About section -->
+       <section id="about" class="py-12 md:py-16 bg-gray-100">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 flex flex-col lg:flex-row items-center justify-between space-y-8 lg:space-y-0">
+
+            <!-- profile pic -->
+             <div class="lg:w-1/2 w-full lg:pr-12 mb-6 lg:mb-0">
+                <img src="./pics/wallpaperflare.com_wallpaper.jpg" alt="profile pic" class="rounded-lg shadow-lg w-full h-auto object-cover ">
+             </div>
+
+                     <!-- content -->
+                      <div class="lg:w-1/2 w-full lg:pl-12 flex flex-col justify-center">
+                        <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 mb-4 transition duration-500 hover:text-yellow-800 hover:scale-105">
+                            About me
+                        </h2>
+
+                        <p class="text-base sm:text-lg md:text-xl text-gray-700 mb-6 leading-relaxed">
+                            I'm Karthikeya Patrudu, a Web Developer based in India. I specialize in designing responsive, user-friendly websites that provide the best user experience. With a passion for clean, efficient design, I strive to help businesses establish their online presence with modern, dynamic websites.
+                        </p>
+
+                        <p class="text-base sm:text-lg md:text-xl text-gray-700 mb-6 leading-relaxed">
+                            Over the years, I've worked on a variety of projects ranging from personal blogs to e-commerce platforms, utilizing cutting-edge technologies like HTML, CSS (Tailwind), and JavaScript. My expertise spans front-end development and the creation of seamless, interactive user interfaces.
+                        </p>
+
+                        <p class="text-base sm:text-lg md:text-xl text-gray-700 mb-6 leading-relaxed">
+                            I believe in continuous learning and strive to stay ahead of industry trends, ensuring that every project I work on is innovative and forward-thinking. When I'm not coding, you can find me exploring new technologies or collaborating with other developers to build exciting projects.
+                        </p>
+
+                        <a href="#about-more" class="inline-block bg-black text-white w-36 py-2 px-4 sm:py-3 sm:px-6 rounded-full text-sm sm:text-lg font-semibold hover:text-yellow-800 hover:shadow-2xl transition-colors">
+                            Read more
+                        </a>
+            </div>
+        </div>
+       </section>
+
+       <!-- skill section -->
+        <section id="skill" class="bg-gray-900 min-h-screen py-16">
+           <h1 class="text-white text-3xl sm:text-4xl md:text-5xl text-center font-serif transition duration-500 hover:text-blue-500 hover:scale-105 underline">My Skills</h1>
+
+            <div id="technical skill" class="container mx-auto space-y-10 mt-20">
+                <h2 class="text-white text-xl sm:text-3xl md:text-4xl mb-12 flex justify-center items-center font-serif transition duration-500 hover:text-blue-500 hover:scale-105 underline">Technical Skills</h2>
+            </div>
+
+            <div class="flex flex-col space-y-5 md:space-y-0 md:flex-row md:justify-center md:space-x-10">
+            <!-- React bar -->
+            <div class="flex items-center flex-col w-full md:w-1/4">
+                <div class="mb-2 flex justify-between items-center">
+                    <h3 class="text-sm font-semibold text-white flex flex-col items-center">
+                        <i class="fa-brands fa-react text-2xl mb-0"></i>
+                           React
+                    </h3>
+                  </div>
+                  <div class="w-full h-4 bg-gray-200 rounded-full overflow-hidden relative transition duration-500">
+                    <div class="bg-blue-600 h-full rounded-full text-xs text-white flex items-center justify-center transition-all duration-500 ease-in-out hover:bg-blue-800" style="width: 65%;">
+                     65%
+                    </div>
+                  </div>
+                 </div>
+            <!-- python bar -->
+             <div class="flex items-center flex-col w-full md:w-1/4">
+                <div class="mb-2 flex justify-between items-center">
+                    <h3 class="text-sm font-semibold text-white flex flex-col items-center">
+                        <i class="fa-brands fa-python text-2xl mb-0"></i>
+                           Python
+                    </h3>
+                  </div>
+                  <div class="w-full h-4 bg-gray-200 rounded-full overflow-hidden relative transition duration-500">
+                    <div class="bg-blue-600 h-full rounded-full text-xs text-white flex items-center justify-center transition-all duration-500 ease-in-out hover:bg-blue-800" style="width: 50%;">
+                     50%
+                    </div>
+                  </div>
+                 </div>
+                 <!-- JavaScript bar -->
+                 <div class="flex items-center flex-col w-full md:w-1/4">
+                    <div class="mb-2 flex justify-between items-center">
+                        <h3 class="text-sm font-semibold text-white flex flex-col items-center">
+                            <i class="fa-brands fa-js text-2xl mb-0"></i>
+                               JavaScript
+                        </h3>
+                      </div>
+                      <div class="w-full h-4 bg-gray-200 rounded-full overflow-hidden relative transition duration-500">
+                        <div class="bg-blue-600 h-full rounded-full text-xs text-white flex items-center justify-center transition-all duration-500 ease-in-out hover:bg-blue-800" style="width: 75%;">
+                         75%
+                        </div>
+                      </div>
+                     </div>
+                     <!-- html/css bar -->
+                     <div class="flex items-center flex-col w-full md:w-1/4">
+                        <div class="mb-2 flex justify-between items-center">
+                            <h3 class="text-sm font-semibold text-white flex flex-col items-center">
+                                <span class="inline-flex">
+                                    <i class="fa-brands fa-html5 text-2xl mb-0 mr-2"></i>
+                                    <i class="fa-brands fa-css3-alt text-2xl mb-0"></i>
+                                 </span>
+                                    HTML/CSS
+                            </h3>
+                        </div>
+                        <div class="w-full h-4 bg-gray-200 rounded-full overflow-hidden relative transition duration-500">
+                            <div class="bg-blue-600 h-full rounded-full text-xs text-white flex items-center justify-center transition-all duration-500 ease-in-out hover:bg-blue-800" style="width: 100%;">
+                             100%
+                            </div>
+                          </div>
+                        </div>
+                        </div>
+
+                        <!-- Professional skill -->
+                         <div id="professional skill" class="container mx-auto mt-32">
+                            <h2 class="text-white text-2xl text-center font-serif transition duration-500 hover:text-blue-500 hover:scale-105 underline">Professional Skills</h2>
+
+                         <div class="grid grid-cols-1 sm:grid-cols-2 gap-8 mt-8 place-items-center">
+                             <!-- Gauge for Creativity -->
+                              <div class="relative w-32 sm:w-40 h-32 sm:h-40 transition-all duration-500 hover:scale-105">
+                                <svg class="rotate-135 w-full h-full" viewBox="0 0 36 36">
+                                    <circle cx="18" cy="18" r="16" fill="none" class="stroke-current text-gray-200" stroke-width="1.5"></circle>
+                                    <circle cx="18" cy="18" r="16" fill="none" class="stroke-current text-blue-600" stroke-width="1.5" stroke-dasharray="80.5 100"></circle>
+                                </svg>
+                                <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center">
+                                        <span class="text-3xl sm:text-4xl font-bold text-blue-600">80%</span>
+                                        <sapn class="text-blue-600 block">Creativity</sapn>
+                                </div>
+                              </div>
+
+                              <!-- Gauge for Communication -->
+                              <div class="relative w-32 sm:w-40 h-32 sm:h-40 transition-all duration-500 hover:scale-105">
+                                <svg class="rotate-135 w-full h-full" viewBox="0 0 36 36">
+                                    <circle cx="18" cy="18" r="16" fill="none" class="stroke-current text-gray-200" stroke-width="1.5"></circle>
+                                    <circle cx="18" cy="18" r="16" fill="none" class="stroke-current text-blue-600" stroke-width="1.5" stroke-dasharray="65.5 100"></circle>
+                                </svg>
+                                <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center">
+                                        <span class="text-3xl sm:text-4xl font-bold text-blue-600">65%</span>
+                                        <sapn class="text-blue-600 block">Communication</sapn>
+                                </div>
+                              </div>
+
+                              <!-- Gauge for Management -->
+                              <div class="relative w-32 sm:w-40 h-32 sm:h-40 transition-all duration-500 hover:scale-105">
+                                <svg class="rotate-135 w-full h-full" viewBox="0 0 36 36">
+                                    <circle cx="18" cy="18" r="16" fill="none" class="stroke-current text-gray-200" stroke-width="1.5"></circle>
+                                    <circle cx="18" cy="18" r="16" fill="none" class="stroke-current text-blue-600" stroke-width="1.5" stroke-dasharray="75.5 100"></circle>
+                                </svg>
+                                <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center">
+                                        <span class="text-3xl sm:text-4xl font-bold text-blue-600">75%</span>
+                                        <sapn class="text-blue-600 block">Management</sapn>
+                                </div>
+                              </div>
+
+                              <!-- Gauge for Leadership -->
+                              <div class="relative w-32 sm:w-40 h-32 sm:h-40 transition-all duration-500 hover:scale-105">
+                                <svg class="rotate-135 w-full h-full" viewBox="0 0 36 36">
+                                    <circle cx="18" cy="18" r="16" fill="none" class="stroke-current text-gray-200" stroke-width="1.5"></circle>
+                                    <circle cx="18" cy="18" r="16" fill="none" class="stroke-current text-blue-600" stroke-width="1.5" stroke-dasharray="70.5 100"></circle>
+                                </svg>
+                                <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center">
+                                        <span class="text-3xl sm:text-4xl font-bold text-blue-600">70%</span>
+                                        <sapn class="text-blue-600 block">Leadership</sapn>
+                                </div>
+                              </div>
+                             </div>
+                         </div>
+                 </section>
+
+                 <!-- Service section-->
+                  <section id="service" class="py-16 bg-gray-800">
+                    <div class="container mx-auto">
+                        <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold text-center text-white mb-12 underline hover:text-yellow-500 transition duration-500">Services</h2>
+                            
+                        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-12">
+                            <!-- Card1 -->
+                             <div class="bg-gray-900 shadow-lg rounded-lg overflow-hidden hover:shadow-2xl transition duration-500 transform hover:scale-105">
+                                <img src="./pics/web-developments.jpg" alt="web development" class="w-full h-48 object-cover">
+                                <div class="p-6">
+                                    <h3 class="text-2xl font-semibold text-white mb-2">Web Development Bootcamp</h3>
+                                    <p class="text-gray-400 mb-4">
+                                        A comprehensive program covering HTML, CSS, JavaScript, and React to build modern web applications. 
+                                        You'll learn how to create dynamic, responsive websites from scratch, preparing you to be job-ready in today's competitive market.
+                                    </p>
+                                     <button id="btn_1" class="inline-block bg-yellow-500 text-white py-2 px-4 rounded-full hover:bg-yellow-600 transition duration-300">View Certificate</button>
+                                </div>
+                             </div> 
+
+                             <!-- card 2 -->
+                             <div class="bg-gray-900 shadow-lg rounded-lg overflow-hidden hover:shadow-2xl transition duration-500 transform hover:scale-105">
+                                <img src="./pics/Python.jpg" alt="Python" class="w-full h-48 object-cover">
+                                <div class="p-6">
+                                    <h3 class="text-2xl font-semibold text-white mb-2">Python Programming</h3>
+                                    <p class="text-gray-400 mb-4">
+                                        A deep dive into Python, covering everything from basic syntax to advanced topics like machine learning. 
+                                        Perfect for aspiring data scientists, AI enthusiasts, or those looking to automate tasks using Python.
+                                    </p>
+                                     <button id="btn_2" class="inline-block bg-yellow-500 text-white py-2 px-4 rounded-full hover:bg-yellow-600 transition duration-300">View Certificate</button>
+                                </div>
+                             </div> 
+
+                             <!-- card 3 -->
+                             <div class="bg-gray-900 shadow-lg rounded-lg overflow-hidden hover:shadow-2xl transition duration-500 transform hover:scale-105">
+                                <img src="./pics/ui-ux-desgin.jpg" alt="ui-ux-desgin" class="w-full h-48 object-cover">
+                                <div class="p-6">
+                                    <h3 class="text-2xl font-semibold text-white mb-2">UI/UX Design</h3>
+                                    <p class="text-gray-400 mb-4">
+                                        Learn the fundamentals of user interface and user experience design to create intuitive and engaging digital products. 
+                        This course will help you build beautiful, functional interfaces that put user satisfaction at the forefront.
+                                    </p>
+                                     <button id="btn_3" class="inline-block bg-yellow-500 text-white py-2 px-4 rounded-full hover:bg-yellow-600 transition duration-300">View Certificate</button>
+                                </div>
+                             </div> 
+
+                             <!-- card 4 -->
+                             <div class="bg-gray-900 shadow-lg rounded-lg overflow-hidden hover:shadow-2xl transition duration-500 transform hover:scale-105">
+                                <img src="./pics/full-stack-Javascript-Developer.jpg" alt="full-stack-Javascript-Developer" class="w-full h-48 object-cover">
+                                <div class="p-6">
+                                    <h3 class="text-2xl font-semibold text-white mb-2">full stack Javascript</h3>
+                                    <p class="text-gray-400 mb-4">
+                                        Master both frontend and backend JavaScript to build full-stack applications using Node.js, Express, and MongoDB. 
+                        This course will equip you with the skills to become a versatile developer, ready for the modern web development ecosystem.
+                                    </p>
+                                     <button id="btn_4" class="inline-block bg-yellow-500 text-white py-2 px-4 rounded-full hover:bg-yellow-600 transition duration-300">View Certificate</button>
+                                </div>
+                             </div> 
+
+                             <!-- card 5 -->
+                             <div class="bg-gray-900 shadow-lg rounded-lg overflow-hidden hover:shadow-2xl transition duration-500 transform hover:scale-105">
+                                <img src="./pics/Digital marketing.jpg" alt="digital marketing" class="w-full h-48 object-cover">
+                                <div class="p-6">
+                                    <h3 class="text-2xl font-semibold text-white mb-2">Digital Marketing</h3>
+                                    <p class="text-gray-400 mb-4">
+                                        A hands-on course covering SEO, PPC, social media marketing, and analytics to drive effective marketing strategies. 
+                                        This course will give you the tools to thrive in the competitive world of online marketing.
+                                    </p>
+                                     <button id="btn_5" class="inline-block bg-yellow-500 text-white py-2 px-4 rounded-full hover:bg-yellow-600 transition duration-300">View Certificate</button>
+                                </div>
+                             </div> 
+
+                             <!-- card 6 -->
+                             <div class="bg-gray-900 shadow-lg rounded-lg overflow-hidden hover:shadow-2xl transition duration-500 transform hover:scale-105">
+                                <img src="./pics/Cybersecurity.jpg" alt="Cybersecurity" class="w-full h-48 object-cover">
+                                <div class="p-6">
+                                    <h3 class="text-2xl font-semibold text-white mb-2">Cybersecurity</h3>
+                                    <p class="text-gray-400 mb-4">
+                                        Gain in-depth knowledge of network security, cryptography, and ethical hacking to secure modern infrastructures. 
+                        This course will prepare you to protect organizations from digital threats and vulnerabilities.
+                                    </p>
+                                     <button id="btn_6" class="inline-block bg-yellow-500 text-white py-2 px-4 rounded-full hover:bg-yellow-600 transition duration-300">View Certificate</button>
+                                </div>
+                             </div> 
+                        </div>
+                    </div>
+                  </section>
+                     
+                  <!-- project section -->
+                   <section id="project" class="bg-gray-900 py-16">
+                    <div class="container mx-auto text-center">
+                        <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-12 underline hover:text-yellow-500 transition duration-500">My projects</h2>
+                        
+                        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                            <!-- project 1 -->
+                             <div class="relative group bg-gray-800 rounded-lg overflow-hidden">
+                                <img src="./pics/porject1.png" alt="porject1" class="w-full h-80 object-contain group-hover:blur-sm transition-transform duration-500 transform group-hover:scale-105">
+                                <div class="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-center justify-center">
+                                    <div class="text-center text-white px-4">
+                                        <h3 class="text-2xl font-semibold mb-2">Personal Portfolio</h3>
+                                        <p class="text-gray-300 mb-4">A sleek and modern portfolio website to showcase my projects and skills, designed with Tailwind CSS.</p>
+                                        <a href="#" class="inline-block mt-4 text-yellow-500 hover:text-yellow-600 transition duration-300">View Project</a>
+
+                                    </div>
+                                </div>
+                             </div>
+
+                             <!-- project2 -->
+                             <div class="relative group bg-gray-800 rounded-lg overflow-hidden">
+                                <img src="./pics/project2.png" alt="porject2" class="w-full h-80 object-contain group-hover:blur-sm transition-transform duration-500 transform group-hover:scale-105">
+                                <div class="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-center justify-center">
+                                    <div class="text-center text-white px-4">
+                                        <h3 class="text-2xl font-semibold mb-2">E-commerce Platform</h3>
+                                        <p class="text-gray-300 mb-4">An online shopping platform featuring a user-friendly interface and secure payment processing.</p>
+                                        <a href="#" class="inline-block mt-4 text-yellow-500 hover:text-yellow-600 transition duration-300">View Project</a>
+
+                                    </div>
+                                </div>
+                             </div>
+
+                             <!-- project3 -->
+                             <div class="relative group bg-gray-800 rounded-lg overflow-hidden">
+                                <img src="./pics/project3.jpg" alt="project3" class="w-full h-80 object-contain group-hover:blur-sm transition-transform duration-500 transform group-hover:scale-105">
+                                <div class="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-center justify-center">
+                                    <div class="text-center text-white px-4">
+                                        <h3 class="text-2xl font-semibold mb-2">Blog Website</h3>
+                                        <p class="text-gray-300 mb-4">A responsive blog site with rich content and an easy-to-navigate layout, built using HTML and Tailwind CSS.</p>
+                                        <a href="#" class="inline-block mt-4 text-yellow-500 hover:text-yellow-600 transition duration-300">View Project</a>
+
+                                    </div>
+                                </div>
+                             </div>
+
+                             <!-- project4 -->
+                             <div class="relative group bg-gray-800 rounded-lg overflow-hidden">
+                                <img src="./pics/project4.jpg" alt="project4" class="w-full h-80 object-contain group-hover:blur-sm transition-transform duration-500 transform group-hover:scale-105">
+                                <div class="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-center justify-center">
+                                    <div class="text-center text-white px-4">
+                                        <h3 class="text-2xl font-semibold mb-2">Task Management App</h3>
+                                        <p class="text-gray-300 mb-4">A web application for managing tasks and projects efficiently, featuring real-time collaboration tools.</p>
+                                        <a href="#" class="inline-block mt-4 text-yellow-500 hover:text-yellow-600 transition duration-300">View Project</a>
+
+                                    </div>
+                                </div>
+                             </div>
+
+                             <!-- project5 -->
+                             <div class="relative group bg-gray-800 rounded-lg overflow-hidden">
+                                <img src="./pics/project5jpg.jpg" alt="project5" class="w-full h-80 object-contain group-hover:blur-sm transition-transform duration-500 transform group-hover:scale-105">
+                                <div class="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-center justify-center">
+                                    <div class="text-center text-white px-4">
+                                        <h3 class="text-2xl font-semibold mb-2">Weather App</h3>
+                                        <p class="text-gray-300 mb-4">A dynamic weather application providing real-time forecasts and location-based weather data with a user-friendly interface.</p>
+                                        <a href="#" class="inline-block mt-4 text-yellow-500 hover:text-yellow-600 transition duration-300">View Project</a>
+
+                                    </div>
+                                </div>
+                             </div>
+
+                             <!-- project6 -->
+                             <div class="relative group bg-gray-800 rounded-lg overflow-hidden">
+                                <img src="./pics/project6.png" alt="project6" class="w-full h-80 object-contain group-hover:blur-sm transition-transform duration-500 transform group-hover:scale-105">
+                                <div class="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-center justify-center">
+                                    <div class="text-center text-white px-4">
+                                        <h3 class="text-2xl font-semibold mb-2">Fitness Tracker</h3>
+                                        <p class="text-gray-300 mb-4">A web-based fitness tracker to log workouts and track progress over time, designed with a clean and intuitive interface</p>
+                                        <a href="#" class="inline-block mt-4 text-yellow-500 hover:text-yellow-600 transition duration-300">View Project</a>
+
+                                    </div>
+                                </div>
+                             </div>
+
+                        </div>
+                    </div>
+
+                   </section>
+
+                   <!-- contact SEction -->
+                    <section id="contact" class="bg-gray-900 py-16 px-5 md:px-20">
+                        <div class="max-w-4xl bg-white rounded-lg p-8 shadow container mx-auto text-center hover:shadow-2xl transition duration-500 transform hover:scale-105">
+                            <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-700 mb-12 underline">Contact Me</h2>
+                            <p class="text-gray-700 mb-6">Kindly Fill the form</p>
+                            <form>
+                                <div class="grid grid-cols-1 mb-4 gap-4">
+                                    <!-- Name input -->
+                                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                                        <div>
+                                            <label for="firstName" class="block text-sm font-medium text-gray-700">First Name</label>
+                                            <input type="text" id="firstName" name="firstName" required class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm
+                                                 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+                                        </div>
+                                        <div>
+                                            <label for="lastName" class="block text-sm font-medium text-gray-700">Last Name</label>
+                                            <input type="text" id="lastName" name="lastName" required class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm
+                                                 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+                                        </div>
+                                     </div>
+
+                                     <!-- email input -->
+                                      <div>
+                                        <label for="email" class="block text-sm font-medium text-gray-700">E-mail *</label>
+                                        <input type="email" id="email" name="email" required class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm
+                                             focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm" placeholder="example@example.com">
+                                      </div>
+
+                                      <!-- message input -->
+                                       <div>
+                                        <label for="message" class="block text-sm font-medium text-gray-700">Message *</label>
+                                        <textarea id="message" name="message" required rows="4" 
+                                        class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm
+                                        focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm" placeholder="Your message here...."> </textarea>
+                                       </div>
+                                     </div>
+
+                                     <!-- submit button -->
+                                      <button type="submit" class="w-full sm:w-36 bg-gray-700 text-white font-bold py-2 px-4 rounded hover:bg-blue-900 transition duration-300">
+                                         Submit
+                                      </button>
+                            </form>
+                         </div>
+                    </section>
+
+                    <!-- footer section -->
+                     <footer class="bg-gray-800 text-white p-4">
+                        <div class="container mx-auto flex flex-col sm:flex-row justify-between items-center ">
+                            <div class="flex mb-4 sm:mb-0 space-x-5">
+                                <!-- Phone -->
+                                 <a href="#" class="text-3xl hover:text-gray-400 transition duration-300 transform hover:scale-110">
+                                    <i class="fa-solid fa-square-phone-flip"></i>
+                                 </a>
+
+                                 <!-- email -->
+                                  <a href="mailto:lakekarthik1@gmail.com" target="_blank" class="text-3xl hover:text-gray-400 transition duration-300 transform hover:scale-110">
+                                         <i class="fa-regular fa-envelope"></i>
+                                  </a>
+                            </div>
+                            <!-- CopyRight -->
+                             <p aria-colspan="text-center sm:text-left">&copy; 2024 Karthikeya Patrudu</p>
+                             </div>
+                            </footer>
+</body>
+</html>
